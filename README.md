@@ -1,3 +1,6 @@
+
+##转发 Mrmineduce21/Oracle_OneKey_Active的脚本自己修改自己的id
+
 # Oracle_OneKey_Active
 为了应对甲骨文最新回收机制而作的垃圾脚本
 
