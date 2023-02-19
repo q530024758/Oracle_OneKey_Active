@@ -42,7 +42,7 @@ OneKeyFuck_OCPU.sh
 
 一键吃掉CPU（可精准控制）【OracleLinux不可用】
 ```
-cd /root && wget -qO OneKeyFuck_OCPU.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/OneKeyFuck_OCPU.sh && chmod +x OneKeyFuck_OCPU.sh && bash OneKeyFuck_OCPU.sh
+cd /root && wget -qO OneKeyFuck_OCPU.sh https://raw.githubusercontent.com/q530024758/Oracle_OneKey_Active/main/OneKeyFuck_OCPU.sh && chmod +x OneKeyFuck_OCPU.sh && bash OneKeyFuck_OCPU.sh
 ```
 
 释放CPU资源
@@ -66,12 +66,12 @@ cat /proc/cpuinfo | grep “processor”|wc -l
 
 一键吃掉1核心
 ```
-cd /root && wget -qO cpu_usage.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/cpu_usage.sh && chmod +x cpu_usage.sh && bash cpu_usage.sh consume 1
+cd /root && wget -qO cpu_usage.sh https://raw.githubusercontent.com/q530024758/Oracle_OneKey_Active/main/cpu_usage.sh && chmod +x cpu_usage.sh && bash cpu_usage.sh consume 1
 ```
 
 取消CPU消耗
 ```
-cd /root && wget -qO cpu_usage.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/cpu_usage.sh && chmod +x cpu_usage.sh && bash cpu_usage.sh release
+cd /root && wget -qO cpu_usage.sh https://raw.githubusercontent.com/q530024758/Oracle_OneKey_Active/main/cpu_usage.sh && chmod +x cpu_usage.sh && bash cpu_usage.sh release
 ```
 
 需要构造消耗2颗cpu的资源运行脚本sh cpu_usage.sh consume 2，此时运行top命令查看cpu的使用率。如果要释放cpu资源
@@ -95,12 +95,12 @@ OneKey_FuckMemory.sh
   真--一键吃内存
   
   ```
-  cd /root && wget -qO OneKey_FuckMemory.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/OneKey_FuckMemory.sh && chmod +x OneKey_FuckMemory.sh && bash OneKey_FuckMemory.sh
+  cd /root && wget -qO OneKey_FuckMemory.sh https://raw.githubusercontent.com/q530024758/Oracle_OneKey_Active/main/OneKey_FuckMemory.sh && chmod +x OneKey_FuckMemory.sh && bash OneKey_FuckMemory.sh
   ```
   
   取消内存消耗(释放内存)
 ```
-cd /root && wget -qO memory_usage.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh release
+cd /root && wget -qO memory_usage.sh https://raw.githubusercontent.com/q530024758/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh release
 ```
 
 ============================================================
@@ -115,23 +115,23 @@ eg : bash memory_usage.sh consume 1G 即消耗1G 的内存
 
 一键吃内存（100MB）
 ```
-cd /root && wget -qO memory_usage.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh consume 100M
+cd /root && wget -qO memory_usage.sh https://raw.githubusercontent.com/q530024758/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh consume 100M
 ```
 
 
 一键吃内存（2G）
 ```
-cd /root && wget -qO memory_usage.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh consume 2G
+cd /root && wget -qO memory_usage.sh https://raw.githubusercontent.com/q530024758/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh consume 2G
 ```
 
 一键吃内存（20G）[适用于24G内存]
 ```
-cd /root && wget -qO memory_usage.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh consume 20G
+cd /root && wget -qO memory_usage.sh https://raw.githubusercontent.com/q530024758/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh consume 20G
 ```
 
 取消内存消耗
 ```
-cd /root && wget -qO memory_usage.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh release
+cd /root && wget -qO memory_usage.sh https://raw.githubusercontent.com/q530024758/Oracle_OneKey_Active/main/memory_usage.sh && chmod +x memory_usage.sh && bash memory_usage.sh release
 ```
 
 ----==================   N   E   T   W   O   R   K   =======================----
@@ -142,7 +142,7 @@ FuckNetWork.sh
 
 一键浪费网络
 ```
-cd /root && wget -qO FuckNetWork.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/FuckNetWork.sh && chmod +x FuckNetWork.sh && nohup ./FuckNetWork.sh &
+cd /root && wget -qO FuckNetWork.sh https://raw.githubusercontent.com/q530024758/Oracle_OneKey_Active/main/FuckNetWork.sh && chmod +x FuckNetWork.sh && nohup ./FuckNetWork.sh &
 ```
 停止运行
 ```
@@ -151,7 +151,7 @@ FNpid=$(ps -ef | grep "FuckNetWork.sh" | grep '/bin/bash' | grep -v grep | awk '
 
 建议手动添加定时任务
 ```
-FNpid=$(ps -ef | grep "FuckNetWork.sh" | grep '/bin/bash' | grep -v grep | awk '{print $2}') && kill -9 $FNpid && rm -f /root/nohup.out && rm -f /root/Oracle_OneKey_Active.log && cd /root && wget -qO FuckNetWork.sh https://raw.githubusercontent.com/Mrmineduce21/Oracle_OneKey_Active/main/FuckNetWork.sh && chmod +x FuckNetWork.sh && nohup ./FuckNetWork.sh &
+FNpid=$(ps -ef | grep "FuckNetWork.sh" | grep '/bin/bash' | grep -v grep | awk '{print $2}') && kill -9 $FNpid && rm -f /root/nohup.out && rm -f /root/Oracle_OneKey_Active.log && cd /root && wget -qO FuckNetWork.sh https://raw.githubusercontent.com/q530024758/Oracle_OneKey_Active/main/FuckNetWork.sh && chmod +x FuckNetWork.sh && nohup ./FuckNetWork.sh &
 ```
 
 
