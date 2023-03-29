@@ -46,10 +46,10 @@ wget --limit-rate=8M  http://speedtest.fremont.linode.com/100MB-fremont.bin  -O 
 
 clear
 rm -f /root/nohup.out
-echo -e " ${green} 下载完成，等待168S(2.8Min)继续运行 ${plain} "
+echo -e " ${green} 下载完成，等待300S(2.8Min)继续运行 ${plain} "
 time=$(date "+%Y-%m-%d %H:%M:%S")
 echo "${time} start wait " >> /root/Oracle_OneKey_Active.log
-sleep 168
+sleep 600
 time=$(date "+%Y-%m-%d %H:%M:%S")
 echo "${time} ==================== " >> /root/Oracle_OneKey_Active.log    
 
